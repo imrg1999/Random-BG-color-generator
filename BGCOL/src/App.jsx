@@ -16,10 +16,12 @@ const App = () => {
   
 
   return (
-    <div style={{backgroundColor:bgCol, display:'flex'}}>
-      <h1>Random BG COLOR Generator</h1>
-      <button onClick={changeColors}>COLORS</button>
-      <h3>{bgCol}</h3>
+    <div style={{backgroundColor:bgCol, display:'flex', 
+    flexDirection:'column', height:'100vh', justifyContent:'center', alignItems:'center'}}>
+      <h1 style={{textAlign:'center'}}>Random BG COLOR Generator</h1>
+      <button onClick={changeColors} style={{width:'fit-content'}}>
+        COLORS</button>
+      <h3>Color Code: {bgCol}</h3>
     </div>
   )
 }
